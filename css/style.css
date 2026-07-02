@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ------------- Header ------------- */
+/* Club Banner */
+.club-banner {
+    background-color: rgb(27, 27, 27);
+    padding: 32px;
+    text-align: center;
+}
+
+.club-banner .banner-title{
+    margin-bottom: 20px;
+    color: rgb(247, 204, 65);
+    font-size: 50px;
+}
+
+.club-banner .banner-quote {
+    color: white;
+    font-size: 20px;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #111827;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar: Container 1 (Club Icon) */
+.club-icon-container {
+    width: 300px;
+    text-align: center;
+}
+
+.club-icon-container .club-icon {
+    height: 60px;
+}
+
+/* Navigation bar: Container 2 (Menus) */
+.menus {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.menus a {
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    display: block;
+    font-size: 20px;
+}
+
+.menus a:hover {
+    background-color: #374151;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #111827;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Navigation bar: Container 3 (Search Bar) */
+.search-bar-container {
+    width: 300px;
+    text-align: center;
+}
+
+.search-bar {
+    height: 30px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.search-bar:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+/* ------------- Footer ------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+}
+
+
+/* ******************** index.html ******************** */
+.home-page {
+    height: 600px;
+    background: 
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.7)
+        ),
+        url("../resources/home/haikyuu-background-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-page .random-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
