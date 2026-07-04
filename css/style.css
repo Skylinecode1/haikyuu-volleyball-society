@@ -144,3 +144,27 @@ footer {
 .attire-equipment-page .attire-equipment-container {
     display: flex;
 }
+
+/* ******************** club_history.html ******************** */
+.club-history-page {
+    font-size: 23px;
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color:rgb(247, 204, 65);
+
+}
+
+.club-history-page .club-history-text h2 {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.club-history-page .club-history-text {
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    text-align: left;
+}
