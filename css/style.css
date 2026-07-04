@@ -141,3 +141,6 @@ footer {
     color: white;
 }
 
+.attire-equipment-page .attire-equipment-container {
+    display: flex;
+}
