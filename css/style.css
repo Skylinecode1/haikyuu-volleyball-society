@@ -145,6 +145,61 @@ footer {
     display: flex;
 }
 
+.attire-equipment-page .attire-cards-container {
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url('../resources/attire/haikyuu-wallpaper-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.attire-equipment-page .equipment-cards-container {
+    flex: 1;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url('../resources/attire/haikyuu-wallpaper-2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.attire-equipment-container h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.attire-equipment-page .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px
+}
+
+.attire-equipment-page .card {
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 20px;
+    aspect-ratio: 1 / 1;
+}
+
+.attire-equipment-page .card h1 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.attire-equipment-page .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgb(255, 255, 255);
+}
+
+
+
+
 /* ******************** club_history.html ******************** */
 .club-history-page {
     font-size: 23px;
