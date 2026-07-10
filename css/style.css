@@ -220,20 +220,41 @@ footer {
     font: size 23px;
 }
 
-.mission-page .mission-text {
-    font-family: Arial, sans-serif;
-    font-size: 23px;
-    text-align: left;
-    line-height: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 800px;
-    margin: 0 auto;
+.mission-container {
+    display: flex;
+    justify-content: center;
+    gap:25px;
+    padding: 60px 20px;
+    align-items: stretch;
 }
 
-.mission-page .mission-text h2 {
-   font-family: Arial, sans-serif;
+.mission-card {
+    background-color: white;
+    border-radius:12px;
+    border-top: 5px solid #e67e22; 
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05); 
     padding: 30px;
-    font-size: 35px;
+    width: 300px;
     text-align: left; 
+    transition: transform 0.5s ease;
+    display:flex;
+    flex-direction: column;
+}
+
+.mission-card:hover {
+    transform: translateY(-7px);
+}
+
+.mission-card:hover h2 {
+    color: #e67e22;
+    transition: color 0.3 ease;
+}
+
+.mission-card p {
+    color: #3a3838;
+    line-height: 1.7;
+    font-size: 15px;
+    margin: 8px 0 0 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    flex-grow: 1;
 }
