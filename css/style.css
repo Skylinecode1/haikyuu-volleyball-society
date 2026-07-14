@@ -122,22 +122,69 @@ footer {
 }
 
 .home-page .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../resources/home/volleyballcourt-img-1.jpg);
-    height: 859px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../resources/home/volleyballcourt-img-2.png);
+    height: 608px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: static;
 }
 
-.home-page .hero-text {
+.home-page .grid {
+    box-sizing: border-box;
+    padding: 16px;
+    transform: translateY(40px);
+    width: 1050px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: white;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: 400px;
+    gap: 16px;
+    justify-content: center;
     text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0px auto;
+    place-items: center;
+}
+
+.home-page .section h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.home-page .section p {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.home-page .section .join-btn {
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+      color 0.15s;
+}
+
+.home-page .section .join-btn:hover {
+    background-color: #ef863d;
     color: white;
 }
+
+.home-page .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 /* ******************** attire.html ******************** */
