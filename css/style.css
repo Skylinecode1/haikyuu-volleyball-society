@@ -213,7 +213,7 @@ footer {
 
 .club-history-page .club-history-text:hover {
     transform: translateX(5px);
-    background-color: white;
+    background-color: rgb(255, 205, 149);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -226,14 +226,15 @@ footer {
 }
 
 .club-history-page .club-history-text p {
-    font-family: Arial, sans-serif;
-    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     text-align: left;
     line-height: 30px;
     padding-left: 30px;
     padding-right: 30px;
     max-width: 800px;
     margin: 0 auto;
+    
 }
 
 /* ******************** mission.html ******************** */
