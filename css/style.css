@@ -173,7 +173,7 @@ footer {
     position:relative;
     max-width: 800px;
     margin: 0 auto;
-    padding-left: 50px;
+    padding: 50px;
 }
 
 .club-history-page .timeline-line {
@@ -184,7 +184,6 @@ footer {
     width: 4px;
     bottom: 10px;
     background-color: black;
-
 }
 
 .club-history-page .timeline-card {
@@ -207,15 +206,15 @@ footer {
     border: 1px solid;
     border-radius: 12px;
     padding: 25px 30px;
-    background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, border-color 0.3s ease;
-
+    background-color: white;
 }
 
 .club-history-page .club-history-text:hover {
     transform: translateX(5px);
-    background-color: #f1a548;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 
