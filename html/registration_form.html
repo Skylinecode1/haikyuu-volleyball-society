@@ -6,6 +6,7 @@
     <title>Haikyuu Volleyball Society</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="" href="">
+    <script src="../js/script.js" defer></script>
 </head>
 <body style="margin: 0px;">
     <header>
@@ -67,6 +68,41 @@
 
     <main class="registration-page">
         <h1>Registration form</h1>
+
+        <section class="registration-section">
+            <div class="form-container">
+                <h2>Join Haikyuu Volleyball Club Now!!!</h2>
+                <p>Fill in your details below to join our club as a new member!!</p>
+
+                <form id="clubForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="e.g. John Pork">
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId">TP Number</label>
+                        <input type="text" id="studentId" placeholder="e.g. TP123456">
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" placeholder="e.g. 012-3456789">
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentEmail">Student Email Address</label>
+                        <input type="studentEmail" id="studentEmail" placeholder="e.g TP123456@mail.apu.edu.my">
+                        <small class="error-message"></small>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
