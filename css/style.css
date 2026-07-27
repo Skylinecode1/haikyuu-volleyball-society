@@ -130,7 +130,7 @@ footer {
     position: static;
 }
 
-.home-page .grid {
+.home-page .join-grid {
     box-sizing: border-box;
     padding: 16px;
     transform: translateY(40px);
@@ -185,7 +185,53 @@ footer {
     object-fit: cover;
 }
 
+.home-page .about-us-section {
+    height: 600px;
+}
 
+.home-page .about-us-section .about-grid {
+    box-sizing: border-box;
+    padding: 16px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(73, 146, 209);
+    width: 1050px;
+    margin: 0px auto;
+    grid-auto-rows: 200px;
+    gap: 20px;
+    transform: translateY(80px);
+}
+
+.home-page .about-grid div {
+    background-color: antiquewhite;
+}
+
+.home-page .about-grid #sec-1 {
+    grid-row: span 2;
+    background-image: url(../resources/home/about-us-01.png);
+}
+
+.home-page .about-grid .grid-child {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.home-page .about-grid .grid-child {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.home-page .grid-child h1 {
+    margin-bottom: 10px;
+}
 
 /* ******************** attire.html ******************** */
 .attire-equipment-page .hero-image {
