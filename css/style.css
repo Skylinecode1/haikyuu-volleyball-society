@@ -195,7 +195,7 @@ footer {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(73, 146, 209);
+    /* background-color: rgb(73, 146, 209); */
     width: 1050px;
     margin: 0px auto;
     grid-auto-rows: 200px;
@@ -204,7 +204,7 @@ footer {
 }
 
 .home-page .about-grid div {
-    background-color: antiquewhite;
+    border-radius: 15px;
 }
 
 .home-page .about-grid #sec-1 {
@@ -212,19 +212,31 @@ footer {
     background-image: url(../resources/home/about-us-01.png);
 }
 
-.home-page .about-grid .grid-child {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    text-align: justify;
-    flex-direction: column;
-    padding: 16px;
+.home-page .about-grid #sec-2 {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../resources/home/club_history_background.png);
+    color: white;
+}
+
+.home-page .about-grid #sec-3 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../resources/home/mission_background.png);
+    color: white;
+}
+
+.home-page .about-grid #sec-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgb(4, 4, 4);
+}
+
+.home-page .about-grid #sec-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgb(4, 4, 4);
 }
 
 .home-page .about-grid .grid-child {
     display: flex; 
     justify-content: center; 
     align-items: center;
+    text-align: justify;
     flex-direction: column;
     padding: 16px;
 }
