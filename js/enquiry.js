@@ -4,6 +4,32 @@ const Name = document.getElementById("Name");
 const studentId = document.getElementById("studentId");
 const phoneNumber = document.getElementById("phoneNumber");
 const studentEmail = document.getElementById("studentEmail");
+const enquiry = document.getElementById("enquiry");
+
+
+function showError(input, message) {
+    const formGroup = input.parentElement;
+    
+    formGroup.classList.add('error');
+    formGroup.classList.remove('success');
+    
+    const small = formGroup.querySelector('small');
+    if (small) {
+        small.innerText = message;
+    }
+}
+
+function showSuccess(input) {
+    const formGroup = input.parentElement;
+    
+    formGroup.classList.add('success');
+    formGroup.classList.remove('error');
+
+    const small = formGroup.querySelector('small');
+    if (small) {
+        small.innerText = '';
+    }
+}
 
 
 
@@ -13,6 +39,7 @@ form.addEventListener("submit", function(event) {
     let isStudentIdValid = false;
     let isPhoneNumberValid = false;
     let isEmailValid = false;
+    let isEnquiryValid = false;
     const validNameRegex = /^[a-zA-Z ]+$/; //Limits input to only characters a-z A-Z and spaces. + operator to match the more than 1 characters in a string.
     const validStudentIdRegex = /^tp\d{6}$/i;//Sets the beginning of the str to be tp (x case sensitive) and limit to 6 numerical characters after
     const invalidPhoneNumberRegex = /^\D$/; // Invalid regex for phone number = notNumbers 
@@ -69,23 +96,27 @@ form.addEventListener("submit", function(event) {
         isEmailValid = true;
     }
 
-    if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid) {
+    if (enquiry.value.trim() === "") {
+        showError(enquiry, "Enquiry field is required*");
+        isEnquiryValid = false;
+    } else {
+        showSuccess(enquiry);
+        isEnquiryValid = true;
+    }
+    
+    
+
+    if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid && isEnquiryValid) {
         setTimeout(() => {
-            window.location.href = "../html/form_success.html";
-        },2000);
+            alert("Your Registration Form Has Been Successfully Submitted!")
+            
+            window.location.href = "../index.html";
+        },1000);
     }
 })
 
 
-function showError(input, message) {
-    const parent = input.parentElement;
-    parent.className = 'form-group error';
-    const small = parent.querySelector('small');
-    small.innerText = message;
-}
 
-function showSuccess(input) {
-    const parent = input.parentElement;
-    parent.className = 'form-group success';
-}
+
+
 

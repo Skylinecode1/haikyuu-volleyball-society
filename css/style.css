@@ -513,11 +513,13 @@
     flex-direction: column;
 }
 
+
 .registration-page .form-group label {
     font-size: 18px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
+
+
 
 .form-group input {
     font-size: 15px;
@@ -525,10 +527,17 @@
     border-radius: 1px;
     color:black;  
     caret-color: #e67e22; 
+    outline:none;
 }
+
+
 
 .form-group.error input {
     border-color: red;
+}
+
+.form-group.success input {
+    border-color: rgb(18, 201, 18);
 }
 
 .registration-page .form-group small {
@@ -542,9 +551,7 @@
     display:block;
 }
 
-.form-group.success input {
-    border-color: rgb(18, 201, 18);
-}
+
 
 .registration-page .submit-button {
     cursor:pointer;
@@ -552,9 +559,48 @@
     transition: ease;
 }
 
-
-
-
 .submit-button:hover {
     background-color:#ff871d;
 }
+
+/* ******************** enquiry_form.html ******************** */
+.registration-page .form-group-textbox {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-page .form-group-textbox label {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group-textbox textarea {
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 1px;
+    color:black;  
+    caret-color: #e67e22; 
+    outline: none;
+}
+
+.registration-page .form-group-textbox small {
+    color: red;
+    font-size: 12px;
+    display:none;
+    margin-top: 3px;
+}
+
+.form-group-textbox.error textarea {
+    border-color: red;
+}
+
+.form-group-textbox.success textarea {
+    border-color: rgb(18, 201, 18);
+}
+
+.form-group-textbox.error small {
+    display:block;
+}
+
+
