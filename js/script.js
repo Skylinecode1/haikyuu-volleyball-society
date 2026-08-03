@@ -88,4 +88,3 @@ function showSuccess(input) {
     const parent = input.parentElement;
     parent.className = 'form-group success';
 }
-
