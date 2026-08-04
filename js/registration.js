@@ -19,7 +19,6 @@ function showSuccess(input) {
 }
 
 
-
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     event.stopImmediatePropagation();

@@ -31,8 +31,6 @@ function showSuccess(input) {
     }
 }
 
-
-
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     let isNameValid = false;
@@ -105,7 +103,6 @@ form.addEventListener("submit", function(event) {
     }
     
     
-
     if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid && isEnquiryValid) {
        const formData = {
         formType: "enquiry",
