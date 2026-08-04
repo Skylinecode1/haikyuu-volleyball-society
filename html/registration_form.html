@@ -6,6 +6,7 @@
     <title>Haikyuu Volleyball Society</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="" href="">
+    <script src="../js/script.js" defer></script>
 </head>
 <body style="margin: 0px;">
     <header>
@@ -67,8 +68,49 @@
 
     <main class="registration-page">
         <h1>Registration form</h1>
-        <button class="btn">click me</button>
 
+        <section class="registration-section">
+            <div class="form-container">
+                <h2>Join Haikyuu Volleyball Club Now!!!</h2>
+                <p>Fill in your details below to join our club as a new member!!</p>
+
+                <form id="clubForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="Name" placeholder="e.g. John Pork">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclaimation-circle"></i>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId">TP Number</label>
+                        <input type="text" id="studentId" placeholder="e.g. TP123456">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclaimation-circle"></i>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" placeholder="e.g. 0123456789">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclaimation-circle"></i>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentEmail">Student Email Address</label>
+                        <input type="studentEmail" id="studentEmail" placeholder="e.g TP123456@mail.apu.edu.my">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclaimation-circle"></i>
+                        <small class="error-message"></small>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
