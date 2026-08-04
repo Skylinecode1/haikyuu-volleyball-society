@@ -1,4 +1,4 @@
-//registration_form.html
+const scriptURL = "https://script.google.com/macros/s/AKfycbysX4M3_oxHWFNW3e0LCWOhrR3cK-ciVFUx8brtpWVhvb-nSN7tuwLZdTOhoDgll3yT/exec";
 const form = document.getElementById("clubForm");
 const Name = document.getElementById("Name");
 const studentId = document.getElementById("studentId");
@@ -22,6 +22,7 @@ function showSuccess(input) {
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
+    event.stopImmediatePropagation();
     let isNameValid = false;
     let isStudentIdValid = false;
     let isPhoneNumberValid = false;
@@ -83,13 +84,27 @@ form.addEventListener("submit", function(event) {
     }
     
 
-    if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid) {
-        setTimeout(() => {
-            alert("Your Registration Form Has Been Successfully Submitted!")
-            
-            window.location.href = "../index.html";
-        },1000);
-    }
+   if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid) {
+    const formData = {
+        formType: "registration",
+        Name: Name.value.trim(),
+        StudentId: studentId.value.trim(),
+        PhoneNumber: phoneNumber.value.trim(),
+        StudentEmail: studentEmail.value.trim()
+    };
+    
+    //Sends input data to google sheet after validation
+     fetch(scriptURL, {    
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(formData)
+    });
+
+    setTimeout(() => {
+        alert("Your Registration Form Has Been Successfully Submitted!");
+        window.location.href = "../index.html";}, 1000)
+   }
 })
 
 
