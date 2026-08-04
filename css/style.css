@@ -817,13 +817,10 @@ footer {
     flex-direction: column;
 }
 
-
 .form-page .form-group label {
     font-size: 18px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 
 .form-group input {
     font-size: 16px;
@@ -834,8 +831,6 @@ footer {
     outline:none;
     padding: 10px 12px;
 }
-
-
 
 .form-group.error input {
     border-color: red;
@@ -855,8 +850,6 @@ footer {
 .form-group.error small {
     display:block;
 }
-
-
 
 .form-page .submit-button {
     cursor:pointer;
