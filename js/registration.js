@@ -1,4 +1,4 @@
-//registration_form.html
+const scriptURL = "https://script.google.com/macros/s/AKfycbysX4M3_oxHWFNW3e0LCWOhrR3cK-ciVFUx8brtpWVhvb-nSN7tuwLZdTOhoDgll3yT/exec";
 const form = document.getElementById("clubForm");
 const Name = document.getElementById("Name");
 const studentId = document.getElementById("studentId");
@@ -6,9 +6,23 @@ const phoneNumber = document.getElementById("phoneNumber");
 const studentEmail = document.getElementById("studentEmail");
 
 
+function showError(input, message) {
+    const parent = input.parentElement;
+    parent.className = 'form-group error';
+    const small = parent.querySelector('small');
+    small.innerText = message;
+}
+
+function showSuccess(input) {
+    const parent = input.parentElement;
+    parent.className = 'form-group success';
+}
+
+
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
+    event.stopImmediatePropagation();
     let isNameValid = false;
     let isStudentIdValid = false;
     let isPhoneNumberValid = false;
@@ -68,23 +82,40 @@ form.addEventListener("submit", function(event) {
         showSuccess(studentEmail);
         isEmailValid = true;
     }
+    
 
-    if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid) {
-        setTimeout(() => {
-            window.location.href = "../html/form_success.html";
-        },2000);
-    }
+   if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid) {
+    const formData = {
+        formType: "registration",
+        Name: Name.value.trim(),
+        StudentId: studentId.value.trim(),
+        PhoneNumber: phoneNumber.value.trim(),
+        StudentEmail: studentEmail.value.trim()
+    };
+    
+    //Sends input data to google sheet after validation
+     fetch(scriptURL, {    
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(formData)
+    });
+
+    setTimeout(() => {
+        alert("Your Registration Form Has Been Successfully Submitted!");
+        window.location.href = "../index.html";}, 1000)
+   }
 })
 
 
-function showError(input, message) {
-    const parent = input.parentElement;
-    parent.className = 'form-group error';
-    const small = parent.querySelector('small');
-    small.innerText = message;
-}
 
+<<<<<<< HEAD:js/script.js
 function showSuccess(input) {
     const parent = input.parentElement;
     parent.className = 'form-group success';
 }
+=======
+
+
+
+>>>>>>> 4f9ba0cc8c09aec73956f3da3095be78a873b3bf:js/registration.js
