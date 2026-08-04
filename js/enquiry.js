@@ -115,7 +115,7 @@ form.addEventListener("submit", function(event) {
         StudentEmail: studentEmail.value.trim(),
         Enquiry: enquiry.value.trim()
     };
-    //Sends input data to google sheet after validation
+    //Sends input data to google sheet after validation ==> https://docs.google.com/spreadsheets/d/1dN4Vf81OLlB6RfOq5lUs8gM4y_xPVWpHhGz0jz7No2s/edit?gid=0#gid=0
     fetch(scriptURL, {
         method: 'POST',
         mode: 'no-cors',
@@ -128,6 +128,8 @@ form.addEventListener("submit", function(event) {
         window.location.href = "../index.html";}, 1000)
    }
 })
+
+
 
 
 

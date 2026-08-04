@@ -93,7 +93,7 @@ form.addEventListener("submit", function(event) {
         StudentEmail: studentEmail.value.trim()
     };
     
-    //Sends input data to google sheet after validation
+    //Sends input data to google sheet after validation  ==> https://docs.google.com/spreadsheets/d/1dN4Vf81OLlB6RfOq5lUs8gM4y_xPVWpHhGz0jz7No2s/edit?gid=0#gid=0
      fetch(scriptURL, {    
         method: 'POST',
         mode: 'no-cors',
@@ -109,13 +109,6 @@ form.addEventListener("submit", function(event) {
 
 
 
-<<<<<<< HEAD:js/script.js
-function showSuccess(input) {
-    const parent = input.parentElement;
-    parent.className = 'form-group success';
-}
-=======
 
 
 
->>>>>>> 4f9ba0cc8c09aec73956f3da3095be78a873b3bf:js/registration.js
