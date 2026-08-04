@@ -438,3 +438,288 @@ footer {
     color:#374151;
     background-color:#e67e22;
 }
+
+/* ******************** tournaments.html ******************** */
+.tournaments-page .fly-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/tournaments/fly.png);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+}
+
+.tournaments-page .fly-image .header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+}
+
+.tournaments-page {
+    background-image: url(../resources/tournaments/haikyuu\ bg.jpg);
+}
+.tournaments-page .tournaments-container {
+    display: flex;          
+    align-items: center;    
+    gap: 100px;              
+    max-width: 1000px;       
+    border: 1px solid #ccc; 
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 200px;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    background-color: white;
+    color: black;
+    font-size: medium;
+}
+
+.tournaments-page .tournaments-container:hover {
+    background-color: #e67e22;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05); 
+    font-size: medium;
+}
+
+.tournaments-page .tournaments-container .tournaments-left-side1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/tournaments/tournaments1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 80vh;
+    
+}
+
+.tournaments-page .tournaments-container .tournaments-right-side {
+    flex: 1; 
+}
+
+.tournaments-page .tournaments-container .tournaments-left-side2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/tournaments/tournaments3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 100vh;
+    
+}
+
+.tournaments-page .tournaments-container .tournaments-left-side3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/tournaments/tournaments2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 80vh;
+    
+}
+
+/* ******************** training.html ******************** */
+
+.training-page {
+    background-image: url(../resources/tournaments/haikyuu\ bg.jpg);
+}
+
+.training-page .fly-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/tournaments/fly.png);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+}
+
+.training-page .fly-image .header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+}
+
+.training-page .training-introduction {
+    text-align: center;
+    border: 1px solid #180202; 
+    border-radius: 15px;
+    margin: 50px;
+    background-color: white;
+}
+
+.training-page .training-introduction:hover {
+    background-color: #e67e22;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05); 
+    font-size: medium;
+}
+
+.training-page .training-Tuesday {
+    text-align: center;
+    border: 1px solid #180202; 
+    border-radius: 15px;
+    margin: 50px;
+    background-color: white;
+}
+
+.training-page .training-Tuesday:hover {
+    background-color: #e67e22;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05); 
+    font-size: medium;
+}
+
+.training-page .training-table {
+    border-collapse: collapse; 
+    border-collapse: separate;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 700px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-spacing: 30px;
+    background-color: white;
+}
+
+.training-page .training-description {
+    text-align: center;
+}
+
+.training-page .training-image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/training/training1-test.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 154px;
+    width: 278px;
+}
+
+.training-page .training-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/training/training2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 154px;
+    width: 278px;
+}
+
+.training-page .training-image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/training/training3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 154px;
+    width: 278px;
+}
+
+.training-page .training-Thursday {
+    text-align: center;
+    border: 1px solid #180202; 
+    border-radius: 15px;
+    margin: 50px;
+    background-color: white;
+}
+
+.training-page .training-Thursday:hover {
+    background-color: #e67e22;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05); 
+    font-size: medium;
+}
+
+.training-page .training-image4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/training/training4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 154px;
+    width: 278px;
+}
+
+.training-page .training-image5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/training/training5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 154px;
+    width: 278px;
+}
+
+.training-page .training-image6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/training/training6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 154px;
+    width: 278px;
+}
+
+.training-page .training-note {
+    text-align: center;
+    border: 1px solid #180202; 
+    border-radius: 15px;
+    margin: 50px;
+    background-color: white;
+}
+
+.training-page .training-note:hover {
+    background-color: #e67e22;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05); 
+    font-size: medium;
+}
+
+/* ******************** training.html ******************** */
+
+.safety-page {
+    background-image: url(../resources/tournaments/haikyuu\ bg.jpg);
+}
+
+.safety-page .fly-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../resources/tournaments/fly.png);
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+}
+
+.safety-page .fly-image .header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+}
+
+.safety-page .safety-rules {
+    text-align: center;
+    border-collapse: collapse;
+    max-width: 1000px;
+    max-height: 500px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.safety-page .safety-rules .ol .safety-list2 {
+    list-style-type: disc;
+}
+
+.safety-page .safety-rules .safety-rules-header{
+    
+}
