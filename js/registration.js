@@ -109,13 +109,6 @@ form.addEventListener("submit", function(event) {
 
 
 
-<<<<<<< HEAD:js/script.js
-function showSuccess(input) {
-    const parent = input.parentElement;
-    parent.className = 'form-group success';
-}
-=======
 
 
 
->>>>>>> 4f9ba0cc8c09aec73956f3da3095be78a873b3bf:js/registration.js
