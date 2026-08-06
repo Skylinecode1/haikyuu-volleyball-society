@@ -1143,7 +1143,71 @@ footer {
 }
 
 /* ******************** our_team.html ******************** */
-.member-card ul {
+.hero-text1 h1 {
+    color:#FFFFFF;
+    font-size: 40px;
+}
+
+h1 {
+    padding-left: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff871d;
+}
+
+.team-card {
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    padding:30px;
+}
+
+.coaching-card {
+    width:400px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.25);
+    box-sizing: border-box;
+    height: 400px;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+
+}
+
+.comittee-card{
+    width:400px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.25);
+    box-sizing: border-box;
+    height: 400px;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+
+.coaching-card h3, .comittee-card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f18324;
+}
+
+.coaching-card img, .comittee-card img {
+    height:256px;
+    width: 192px;
+}
+
+.coaching-card ul, .comittee-card ul {
     list-style-type: disc;
     padding-left: 20px;
 }
+
+.coaching-card:hover, .comittee-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgb(0, 0, 0);
+}
+
+
+
