@@ -1141,3 +1141,9 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/* ******************** our_team.html ******************** */
+.member-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
