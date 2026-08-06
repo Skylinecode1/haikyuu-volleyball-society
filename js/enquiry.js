@@ -8,27 +8,15 @@ const enquiry = document.getElementById("enquiry");
 
 
 function showError(input, message) {
-    const formGroup = input.parentElement;
-    
-    formGroup.classList.add('error');
-    formGroup.classList.remove('success');
-    
-    const small = formGroup.querySelector('small');
-    if (small) {
-        small.innerText = message;
-    }
+    const parent = input.parentElement;
+    parent.className = 'form-group error';
+    const small = parent.querySelector('small');
+    small.innerText = message;
 }
 
 function showSuccess(input) {
-    const formGroup = input.parentElement;
-    
-    formGroup.classList.add('success');
-    formGroup.classList.remove('error');
-
-    const small = formGroup.querySelector('small');
-    if (small) {
-        small.innerText = '';
-    }
+    const parent = input.parentElement;
+    parent.className = 'form-group success';
 }
 
 form.addEventListener("submit", function(event) {
