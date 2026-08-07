@@ -4,6 +4,7 @@ const Name = document.getElementById("Name");
 const studentId = document.getElementById("studentId");
 const phoneNumber = document.getElementById("phoneNumber");
 const studentEmail = document.getElementById("studentEmail");
+const enquiry = document.getElementById("enquiry");
 
 
 function showError(input, message) {
@@ -20,11 +21,11 @@ function showSuccess(input) {
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
-    event.stopImmediatePropagation();
     let isNameValid = false;
     let isStudentIdValid = false;
     let isPhoneNumberValid = false;
     let isEmailValid = false;
+    let isEnquiryValid = false;
     const validNameRegex = /^[a-zA-Z ]+$/; //Limits input to only characters a-z A-Z and spaces. + operator to match the more than 1 characters in a string.
     const validStudentIdRegex = /^tp\d{6}$/i;//Sets the beginning of the str to be tp (x case sensitive) and limit to 6 numerical characters after
     const invalidPhoneNumberRegex = /^\D$/; // Invalid regex for phone number = notNumbers 
@@ -80,19 +81,27 @@ form.addEventListener("submit", function(event) {
         showSuccess(studentEmail);
         isEmailValid = true;
     }
-    
 
-   if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid) {
-    const formData = {
-        formType: "registration",
+    if (enquiry.value.trim() === "") {
+        showError(enquiry, "Enquiry field is required*");
+        isEnquiryValid = false;
+    } else {
+        showSuccess(enquiry);
+        isEnquiryValid = true;
+    }
+    
+    
+    if (isNameValid && isStudentIdValid && isPhoneNumberValid && isEmailValid && isEnquiryValid) {
+       const formData = {
+        formType: "enquiry",
         Name: Name.value.trim(),
         StudentId: studentId.value.trim(),
         PhoneNumber: phoneNumber.value.trim(),
-        StudentEmail: studentEmail.value.trim()
+        StudentEmail: studentEmail.value.trim(),
+        Enquiry: enquiry.value.trim()
     };
-    
-    //Sends input data to google sheet after validation  ==> https://docs.google.com/spreadsheets/d/1dN4Vf81OLlB6RfOq5lUs8gM4y_xPVWpHhGz0jz7No2s/edit?gid=0#gid=0
-     fetch(scriptURL, {    
+    //Sends input data to google sheet after validation ==> https://docs.google.com/spreadsheets/d/1dN4Vf81OLlB6RfOq5lUs8gM4y_xPVWpHhGz0jz7No2s/edit?gid=0#gid=0
+    fetch(scriptURL, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
@@ -100,10 +109,12 @@ form.addEventListener("submit", function(event) {
     });
 
     setTimeout(() => {
-        alert("Your Registration Form Has Been Successfully Submitted!");
+        alert("Your Enquiry Form Has Been Successfully Submitted!");
         window.location.href = "../index.html";}, 1000)
    }
 })
+
+
 
 
 
