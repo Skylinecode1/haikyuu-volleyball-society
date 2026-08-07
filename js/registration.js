@@ -18,7 +18,6 @@ function showSuccess(input) {
     parent.className = 'form-group success';
 }
 
-
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     event.stopImmediatePropagation();
