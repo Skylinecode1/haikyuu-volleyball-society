@@ -604,26 +604,14 @@ footer {
     text-align: center;
     border: 1px solid #180202; 
     border-radius: 15px;
-    margin: 50px;
+    margin: 50px auto;
     background-color: white;
-}
-
-.training-page .training-introduction:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 25px rgb(0, 0, 0);
+    max-width: 1000px;
+    padding: 10px;
 }
 
 .training-page .training-Tuesday {
     text-align: center;
-    border: 1px solid #180202; 
-    border-radius: 15px;
-    margin: 50px;
-    background-color: white;
-}
-
-.training-page .training-Tuesday:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 25px rgb(0, 0, 0);
 }
 
 .training-page .training-table {
@@ -678,16 +666,8 @@ footer {
 }
 
 .training-page .training-Thursday {
+    margin-top: 100px;
     text-align: center;
-    border: 1px solid #180202; 
-    border-radius: 15px;
-    margin: 50px;
-    background-color: white;
-}
-
-.training-page .training-Thursday:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 25px rgb(0, 0, 0);
 }
 
 .training-page .training-image4 {
@@ -718,16 +698,13 @@ footer {
 }
 
 .training-page .training-note {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
     text-align: center;
-    border: 1px solid #180202; 
-    border-radius: 15px;
-    margin: 50px;
-    background-color: white;
-}
-
-.training-page .training-note:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 25px rgb(0, 0, 0);
+    font-size: 15px;
+    max-width: 1000px;
 }
 
 /* ******************** safety_rules.html ******************** */
@@ -763,11 +740,15 @@ footer {
     border: 1px solid black;
     background-color: white;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 50px;
     margin-left: 250px;
     border-radius: 15px;
     margin-top: 70px;
     margin-bottom: 70px;
+}
+
+.safety-page ol li{
+    margin-bottom: 10px;
 }
 
 .safety-page .safety-rules:hover {
@@ -1045,6 +1026,7 @@ footer {
 }
 
 .match-page .fly-image .header-text {
+    margin-bottom: 40px;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -1054,7 +1036,7 @@ footer {
     font-size: 25px;
 }
 
-.match-page .match-rules1 {
+.match-page .match-rules {
     list-style-position: outside;
     border-collapse: collapse;
     max-width: 1000px;
@@ -1065,54 +1047,16 @@ footer {
     padding-left: 20px;
     margin-left: 250px;
     margin-top: 70px;
+    padding: 50px;
     border-radius: 15px;
 }
 
-.match-page .match-rules1:hover {
+.match-page .match-rules:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 25px rgb(0, 0, 0);
 }
 
-.match-page .match-rules2 {
-    list-style-position: outside;
-    border-collapse: collapse;
-    max-width: 1000px;
-    max-height: 1000px;
-    border: 1px solid black;
-    background-color: white;
-    justify-content: center;
-    padding-left: 20px;
-    margin-left: 250px;
-    margin-top: 70px;
-    border-radius: 15px;
-}
-
-.match-page .match-rules2:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 25px rgb(0, 0, 0);
-}
-
-.match-page .match-rules3 {
-    list-style-position: outside;
-    border-collapse: collapse;
-    max-width: 1000px;
-    max-height: 1000px;
-    border: 1px solid black;
-    background-color: white;
-    justify-content: center;
-    padding-left: 20px;
-    margin-left: 250px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    border-radius: 15px;
-}
-
-.match-page .match-rules3:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 25px rgb(0, 0, 0);
-}
-
-.match-page .match-rules1 .match-rules-header1{
+.match-page .match-rules .match-rules-header{
     text-align: center;
     border-collapse: collapse;
     max-width: 1000px;
@@ -1122,24 +1066,9 @@ footer {
     margin-bottom: 20px;
 }
 
-.match-page .match-rules2 .match-rules-header2{
-    text-align: center;
-    border-collapse: collapse;
-    max-width: 1000px;
-    max-height: 500px;
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.match-page .match-rules3 .match-rules-header3{
-    text-align: center;
-    border-collapse: collapse;
-    max-width: 1000px;
-    max-height: 500px;
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.match-page .match-rules li {
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 /* *********************** news.html *********************** */
