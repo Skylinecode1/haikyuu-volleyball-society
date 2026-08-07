@@ -1246,18 +1246,18 @@ footer {
 }
 
 /* ******************** our_team.html ******************** */
-.hero-text1 h1 {
+.team-page .hero-text1 h1 {
     color:#FFFFFF;
     font-size: 40px;
 }
 
-h1 {
+.team-page h1 {
     padding-left: 120px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ff871d;
 }
 
-.team-card {
+.team-page .team-card {
     display:flex;
     flex-wrap:wrap;
     gap:30px;
@@ -1265,7 +1265,7 @@ h1 {
     padding:30px;
 }
 
-.coaching-card {
+.team-page .coaching-card {
     width:400px;
     border-radius:20px;
     overflow:hidden;
@@ -1279,7 +1279,7 @@ h1 {
 
 }
 
-.comittee-card{
+.team-page .comittee-card{
     width:400px;
     border-radius:20px;
     overflow:hidden;
@@ -1292,22 +1292,22 @@ h1 {
     padding:20px;
 }
 
-.coaching-card h3, .comittee-card h3 {
+.team-page .coaching-card h3, .comittee-card h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: #f18324;
 }
 
-.coaching-card img, .comittee-card img {
+.team-page .coaching-card img, .comittee-card img {
     height:256px;
     width: 192px;
 }
 
-.coaching-card ul, .comittee-card ul {
+.team-page .coaching-card ul, .comittee-card ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
-.coaching-card:hover, .comittee-card:hover {
+.team-page .coaching-card:hover, .comittee-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 25px rgb(0, 0, 0);
 }
