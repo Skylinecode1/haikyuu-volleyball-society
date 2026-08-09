@@ -8,14 +8,18 @@ const studentEmail = document.getElementById("studentEmail");
 
 function showError(input, message) {
     const parent = input.parentElement;
-    parent.className = 'form-group error';
-    const small = parent.querySelector('small');
+    parent.classList.remove("success");
+    parent.classList.add("error");
+    
+    const small = parent.querySelector("small");
     small.innerText = message;
 }
 
+
 function showSuccess(input) {
     const parent = input.parentElement;
-    parent.className = 'form-group success';
+    parent.classList.remove("error");
+    parent.classList.add("success");
 }
 
 form.addEventListener("submit", function(event) {
